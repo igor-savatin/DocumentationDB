@@ -3,12 +3,12 @@
         {
             "id": "inst",
             "header": "Instancia",
-            "query": "SELECT 1 FROM dual"
+            "query": "SELECT 1 \"teste\" FROM dual"
         },
         {
             "id": "inst2",
             "header": "Instancia1",
-            "query": "SELECT 2"
+            "query": "SELECT 2 from dual"
         }
     ],
     "mssql": [

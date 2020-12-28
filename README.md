@@ -35,6 +35,19 @@ example:
     }]
 }
 ```
+
+Observation: when you need use " at query use backslash before, example: \\" .
+
+Example query: 
+ 
+```json
+{
+    "id": "test_oracle",
+    "header": "Test",
+    "query": "SELECT 1 \"teste\" FROM dual"
+}
+```
+
 ## Example of instance.json
 example:
 ```json
