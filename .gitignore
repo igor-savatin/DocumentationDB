@@ -130,3 +130,7 @@ dmypy.json
 
 config/*
 report/*
+
+# exception to the rule
+!config/.gitkeep 
+!report/.gitkeep 
