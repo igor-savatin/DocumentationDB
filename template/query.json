@@ -1,0 +1,14 @@
+{
+    "type instance oracle/mssql": [
+        {
+            "id": "inst",
+            "header": "Instancia",
+            "query": "SELECT 1 FROM dual"
+        },
+        {
+            "id": "inst2",
+            "header": "Instancia1",
+            "query": "SELECT 2"
+        }
+    ]
+}

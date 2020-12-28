@@ -1,0 +1,17 @@
+{
+    "instance": [
+        {
+            "name": "aliasInstance",
+            "ip": "192.168.1.1",
+            "instanceType": "Chose 1: oracle / mssql",
+            "type": "Type of environment like Dev / QA / Prod",
+            "user": "user",
+            "password": "password, will be encrypted",
+            "connectionString": "ip:porta/service_name",
+            "database": "use only when mssql",
+            "query": [
+                "same id at query.json"
+            ]
+        }
+    ]
+}
