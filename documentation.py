@@ -49,7 +49,7 @@ def generateReport(instance,query,templatePath,reportPath):
         open(f"{reportPath}/{dirFile}/01_index.html","w").write(pageIndex)
         open(f"{reportPath}/{dirFile}/{nameFile}.html","w").write(fileHtml)
     logging.info("end")
-    print(f"\nReport gerated {reportPath}\{dirFile}\01_index.html")
+    print(f"\nReport gerated {reportPath}\{dirFile}\\01_index.html")
     
 
 def main():
@@ -71,10 +71,10 @@ def main():
     # secretKey = os.environ.get('SECRET_KEY')
     print(f"Paths Default:\n Instance File: {instanceFile} \n Query File: {queryFile} \n Report Path: {reportPath} \n Template Path: {templatePath}")
     checkCfg(instanceFile,queryFile)
-    # generateReport(instance = instanceFile
-    # ,query=queryFile
-    # ,templatePath=templatePath
-    # ,reportPath = reportPath)
+    generateReport(instance = instanceFile
+    ,query=queryFile
+    ,templatePath=templatePath
+    ,reportPath = reportPath)
 
 if __name__ == "__main__":
     main()

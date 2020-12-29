@@ -76,7 +76,7 @@ def validateCfg(configCfgInstance,configCfgQuery):
                     for queryId in instance["query"]:
                         queryString=list(filter(lambda q: q["id"].lower() == queryId, query[instance["instanceType"].lower()]))[0]
                 except:
-                    print("""Verify Query {queryId} of instance {instance["name"]}""")
+                    print(f"""Verify Query {queryId} of instance {instance["name"]}""")
                     sys.exit(1)
         if not os.path.isfile(configCfgInstance) or not os.path.isfile(configCfgQuery):
             if not os.path.isfile(configCfgInstance):
